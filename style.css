@@ -1,0 +1,271 @@
+body{
+}
+.header{
+    background-image:url(images/newyork2.png);
+    height:100vh;
+    width:100%;
+    background-position:center;
+    background-size:cover;
+    position:relative;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display:flex;
+    padding: 2% 2%;
+    justify-content:space-between;
+    align-items:center;
+}
+nav img{
+    width:100px;
+    border-radius:10px;
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    position:relative;
+    padding:0 20px 100px 0;
+}
+.nav-links ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:red;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    position:absolute;
+    color:white;
+    text-align:center;
+    top:50%;
+    left:50;
+    width:100%;
+    transform: translate(0%, 0%);
+}
+.text-box h1{
+    font-size:60px;
+}
+.text-box p{
+    font-size:16px;
+    padding:14px 0 40px;
+}
+.hero-bin{
+    color:white;
+    padding:20px;
+    border:1px solid black;
+    font-size:20px;
+    text-decoration:none;
+    background:transparent;
+    cursor:pointer;
+}
+.hero-bin:hover{
+    border:1px solid black;
+    background:red;
+    transition:0.5s;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size:50px;
+    }
+    .nav-links ul li{
+        display:block;
+    }
+    .mnav-links{
+        position:absolute;
+        background:#f44336;
+        height:100vh;
+        width:200px;top:0;
+        right:0;
+        text-align:left;
+        z-index:2;
+    }
+}
+.course{
+    color:black;
+    text-align:center;
+    margin:auto;
+    margin-top:150px;
+}
+h1{
+    font-size:40px;
+    font-weight:600;
+}
+p{
+    font-size:50px;
+    font-weight:300;
+    line-height:22px;
+    padding-bottom:40px;
+}
+.row{
+    display:flex;
+    justify-content:space-between;
+    margin:5px;
+}
+.column1{
+    flex-basis:31%;
+    background:lightslategray;
+    color:white;
+    font-size:30px;
+    height:50vh;
+    margin-bottom:5px;
+    transition:transform 0.5s;
+    transition:0.5s;
+    box-sizing:border-box;
+
+}
+.column1:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+}
+h3{
+    font-size:20px;
+    font-weight:400;
+    margin-top:10px;
+    padding:10px;
+    background:black;
+    color:white;
+    border:1px solid red;
+}
+.campus{
+    text-align:center;
+    margin-top:100px;
+}
+.column2{
+    flex-basis:32%;
+    position:relative;
+    overflow:hidden;
+    border-radius:10px;
+    height:400px;
+    width:600px;
+}
+.layer{
+    position:absolute;
+    background:transparent;
+    height:100%;
+    width:100%;
+    font-size:20px;
+    top:0;
+    left:0;
+    transition:0.5s;
+}
+.layer p{
+    font-size:30px;
+    font-weight:400;
+    color:#fff;
+    bottom:0;
+    left:40%;
+    position:absolute;
+    transition:0.5s;
+    opacity:0;
+}
+.layer:hover{
+    background:rgba(226,0,0,0.7);
+}
+.layer h3{
+    width:100%;
+    color:#fff;
+}
+.layer:hover p{
+    bottom:49%;
+    opacity:2;
+}
+.facilities{
+    text-align:center;
+    margin-top:15px;
+    padding-top:100px;
+}
+p{
+    font-size:15px;
+}
+.column3{
+    margin:10px;
+    border-radius:10px;
+    margin-bottom:5%;
+    text-align:center;
+}
+.column3 img{
+    width:100%;
+    border-radius:10px;
+}
+.layer2 p{
+    font-size:15px;
+    padding-top:15px;
+    position:relative;;
+}
+.layer2{
+    position:relative;
+}
+.layer2 h4{
+    font-size:30px;
+}
+.contact{
+    text-align:center;
+    margin-top:10px;
+    background-image:url(images/club2.png);
+    background-position:center;
+    background-size:cover;
+    text-align:center;
+    border-radius:10px;
+    color:white;
+    padding:100px 0;
+    margin-bottom:20px;
+}
+.btn{
+    padding:20px 30px;
+    border:1px solid red;
+    background:transparent;
+    color:black;
+    transition:0.5s;
+    font-size:orange;
+}
+.btn:hover{
+    background:red;
+}
+.footer{
+    text-align:center;
+    margin-top:100px;
+}
+.icons{
+    color:black;
+}
+.info{
+    padding:20px;
+    background:transparent;
+    border:10px solid black;
+
+}
+.mail,.contacter{
+    background-color:lightblue;
+    padding:10px 0px;
+    padding-left:20px;
+    padding-top:30px;
+    padding-right:10px;
+    width:100%;
+    margin:10px;
+    transition:0.5s;
+    transition:transform 0.5s;
+    border:1px solid black;
+    position:relative;
+}
+.mail:hover,.contacter:hover{
+    background:black;
+    transform:scale(1.0);
+    color:white;
+}
